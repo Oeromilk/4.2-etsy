@@ -1,0 +1,111 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #F5F5F1;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+}
+
+.big-box {
+  padding: none;
+  margin: none;
+}
+
+.vertical-style {
+  vertical-align: middle;
+}
+
+.header-box {
+  margin-top: 10px;
+  height: 80px;
+}
+
+.product-style {
+  display:inline-block;
+  padding: 5px;
+}
+
+.nav-header ul li {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.header-actions {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.form-group {
+  width: 325px;
+  display: inline-block;
+}
+
+.search-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-button input {
+  display:inline-block;
+}
+
+.search-button h6 {
+  display:inline-block;
+}
+
+.button-location {
+  display: inline-block;
+}
+
+.product-style:hover {
+  border-bottom: 1px solid black;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.title-style {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #4B4B4B;
+}
+
+.price-style {
+  display: inline-block;
+  color: #79C044;
+}
+
+.shop-style {
+  display: inline-block;
+  color: #A2A2A2;
+}
