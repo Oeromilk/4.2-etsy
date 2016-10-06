@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Etsy</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container big-box">
+
+        <div class="row">
+          <header class="header-box white">
+            <div class = "col-md-8 ">
+              <a href="#"><img src="https://www.etsy.com/assets/dist/images/etsylogo@2x.20160609191624.png" alt="Etsy Logo" /></a>
+                  <div class ="form-group">
+                    <input type="text" class="form-control" placeholder="Search for items or shops"/>
+                  </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+              </div>
+                <ul class = "header-actions">
+                  <li class = "col-md-1 sell-on-etsy"><a href="#">Sell on Etsy</a></li>
+                  <li class = "col-md-1 register"><a href="#">Register</a></li>
+                  <li class = "col-md-1 sign-ing"><button type="submit" class="btn btn-default">Sign In</button></li>
+                  <li class = "col-md-1 vertical-align cart"><a href="#"><div class="glyphicon glyphicon-shopping-cart"></div><div>cart</div></a></li>
+                </ul>
+          </header>
+        </div>
+        <div class="row nav-header white">
+          <ul>
+            <li><a href="#">Clothing &amp; Acessories</a></li>
+            <li><a href="#">Jewlery</a></li>
+            <li><a href="#">Craft Supplies &amp; Tools</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Home &amp; Living</a></li>
+            <li><a href="#">Kids &amp; Baby</a></li>
+            <li><a href="#">Vintage</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 row sidebar">
+
+            <h6>Show results for:</h6>
+            <div class="white">
+              <h6><a href="#" class="glyphicon glyphicon-chevron-left">All categories</a></h6>
+              <h6><a href="#">Arts &amp; Collectibles</a></h6>
+              <ul>
+                <li><a href="#">Prints</a></li>
+                <li><a href="#">Painting</a></li>
+                <li><a href="#">Collectibles</a></li>
+                <li><a href="#">Sculpture</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Mixed Media &amp; Collage</a></li>
+                <li><a href="#">Dolls &amp; Miniatures</a></li>
+                <li><a href="#">Drawing &amp; Illustration</a></li>
+                <li><a href="#">Fiber Arts</a></li>
+                <li><a href="#">Fine Art Ceramics</a></li>
+                <li><a href="#">Clip Art</a></li>
+                <li><a href="#">Glass Art</a></li>
+                <li><a href="#">Artist Trading Cards</a></li>
+                <li><a href="#">Pet Portraits</a></li>
+              </ul>
+
+          </div>
+
+          <div class="">
+            <h6>Refine your search</h6>
+            <div class="input-group group1 white">
+              <h6>Shop Location</h6>
+              <ul class ="search-button">
+                <li><a href=""><input type="radio" aria-label="..."><h6 class ="buton-location">Anywhere</h6></a></li>
+                <li><a href=""><input type="radio" aria-label="..."><h6 class ="buton-location">United States</h6></a></li>
+                <li><a href="">Choose a custom location</a></li>
+              </ul>
+            </div>
+
+            <div class="input-group group2 white">
+              <h6>Item Type</h6>
+              <ul class ="search-button">
+                <li><a href=""><input type="radio" aria-label="..."><h6 class ="buton-location">All Items</h6></a></li>
+                <li><a href=""><input type="radio" aria-label="..."><h6 class ="buton-location">Hand Made</h6></a></li>
+                <li><a href=""><input type="radio" aria-label="..."><h6 class ="buton-location">Vintage</h6></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10 row prodcut-box">
+          <div class ="search-nav row col-md-10 col-md-offset-1">
+            <span><a href="#">All categories</a></span><span class ="glyphicon glyphicon-chevron-right"></span>
+            <span><a href="#">Craft Supplies &amp; Tools</a></span><span class ="glyphicon glyphicon-chevron-right"></span>
+            <span><a href="#">Fiber &amp; textile Art Supplies</a></span><span class ="glyphicon glyphicon-chevron-right"></span>
+            <span><a href="#">Yarn &amp; Roving</a></span><span class ="glyphicon glyphicon-chevron-right"></span>
+            <span><a href="#">Yarn</a></span><span class ="glyphicon glyphicon-chevron-right"></span>
+          </div>
+          <ul class="products">
+            <!--products go here-->
+          </ul>
+        </div>
+
+      </div>
+
+    <script id="product-template" type="text/x-handlebars-template">
+      <li class = "col-md-3 product-style product white">
+        <a href="{{url}}">
+          <img class ="product-image" src="{{Images.0.url_170x135}}" alt="{{title}}" />
+          <div class="title-style">
+            {{title}}
+          </div>
+          <div class="">
+            <div class = "shop-style">{{Shop.shop_name}}</div><div class = "price-style">${{price}}</div>
+          </div>
+        </a>
+      </li>
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
