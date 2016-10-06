@@ -22,15 +22,6 @@ function renderTemplate(products){
 }
 
 
-
-
-
-
-
-
-
-
-
 /*
   (url: String, callback: Function) -> undefined
 
